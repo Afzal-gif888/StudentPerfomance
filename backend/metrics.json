@@ -1,0 +1,73 @@
+{
+    "LogisticRegression": {
+        "accuracy": 0.7783,
+        "f1_score": 0.8171,
+        "cv_mean": 0.8079,
+        "confusion_matrix": [
+            [
+                170,
+                39
+            ],
+            [
+                94,
+                297
+            ]
+        ],
+        "class_distribution": {
+            "0": 1022,
+            "1": 1978
+        }
+    },
+    "selected_model": "LogisticRegression",
+    "threshold": 0.65,
+    "feature_importance": [
+        {
+            "name": "study_hours",
+            "value": 0.2566
+        },
+        {
+            "name": "previous_grade",
+            "value": 0.2337
+        },
+        {
+            "name": "attendance_percentage",
+            "value": 0.1925
+        },
+        {
+            "name": "parental_education_PhD",
+            "value": 0.1015
+        },
+        {
+            "name": "parental_education_High School",
+            "value": 0.0699
+        },
+        {
+            "name": "extracurricular_activity_Yes",
+            "value": 0.059
+        },
+        {
+            "name": "internet_access_Yes",
+            "value": 0.0466
+        },
+        {
+            "name": "extracurricular_activity_No",
+            "value": 0.0149
+        },
+        {
+            "name": "parental_education_Master",
+            "value": 0.0145
+        },
+        {
+            "name": "sleep_hours",
+            "value": 0.0064
+        },
+        {
+            "name": "internet_access_No",
+            "value": 0.0025
+        },
+        {
+            "name": "parental_education_Bachelor",
+            "value": 0.002
+        }
+    ]
+}

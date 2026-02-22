@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: student-performance-api
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn -k uvicorn.workers.UvicornWorker main:app
+    envVars:
+      - key: PORT
+        value: 10000
+      - key: ALLOWED_ORIGINS
+        value: "*" # Change this to your Netlify URL after deployment
